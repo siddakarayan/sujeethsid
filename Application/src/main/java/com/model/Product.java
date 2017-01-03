@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.springframework.web.multipart.MultipartFile;
  
 
 @Entity
@@ -17,14 +20,29 @@ public class Product {
     private int productid;
     private String productname;
     private String productprice;
-    public String getCategory() {
-		return category;
+    private String productcategory;
+
+	@Transient
+	private MultipartFile files;
+   
+
+	public String getProductcategory() {
+		return productcategory;
 	}
-	public void setCategory(String category) {
-		this.category = category;
+	public void setProductcategory(String productcategory) {
+		this.productcategory = productcategory;
 	}
+	
 	private String productdetails;
-    private String category;
+    
+	
+	
+	public MultipartFile getFiles() {
+		return files;
+	}
+	public void setFiles(MultipartFile files) {
+		this.files = files;
+	}
 	public int getProductid() {
 		return productid;
 	}

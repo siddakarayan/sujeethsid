@@ -65,7 +65,7 @@ import com.model.Product;
 		Session session=sessionFactory.openSession();
 		@SuppressWarnings("unused")
 		Product product=(Product)session.get(Product.class,pid);
-		session.close();
+		
 		return product;
 	}
 	
@@ -80,13 +80,14 @@ import com.model.Product;
 	@Transactional
 	@SuppressWarnings("unchecked")
 	
-	public List<Product> getproductsbyid(String category){
+	public List<Product> getproductsbyid(String productcategory){
 		
 		Session session= this.sessionFactory.getCurrentSession();
 		
 		Criteria criteria=session.createCriteria(Product.class);
-		criteria.add(Restrictions.eq("category",category));
+		criteria.add(Restrictions.eq("productcategory",productcategory));
 		List<Product> list2=criteria.list();
+		System.out.println(list2);
 		return list2;
 	}
 	}
