@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+ <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+  -->
+<style>
+
+ 
+form
+{
+
+width:400px;
+background-color:white;
+padding:40px;
+margin:40px;
+}
+fieldset
+{
+
+width:500px;
+background-color:pink;
+padding:40px;
+margin:40px;
+}
+</style>
+</head>
+
+<body>
+<div class="container" id="wrap">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+   
+<div id="a">
+<br>
+<br>
+
+<div ng-controller="ctrl">
+ <h3>Login Page</h3>
+ 
+	<style>
+ body {
+   background-color:orange;
+    background-repeat;
+}
+</style>
+	  
+ <div class="form">
+      <label for="email">Email:</label>
+      <input type="text"   ng-model="email"  name="email"  required placeholder="Enter user name">
+    </div>
+    <div class="form2">
+      <label for="password">Password:</label>
+      <input type="password"  ng-model="password" name="password"  required  placeholder="Enter password">
+    </div>
+    
+    <br>
+    
+           
+   <button type="submit" ng-click ="Login()">Login</button>
+ 
+ 
+</div>
+
+</div></div></div></div>
 </html>
