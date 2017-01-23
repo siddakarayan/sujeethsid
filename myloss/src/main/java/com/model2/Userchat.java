@@ -53,9 +53,10 @@ public class Userchat {
 		public String getMobile() {
 			return mobile;
 		}
-		public void setMobile(String string) {
+		public void setMobile(String mobile) {
 			this.mobile = mobile;
 		}
+		
 		
 	}
 

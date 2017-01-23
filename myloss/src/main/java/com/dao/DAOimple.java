@@ -45,7 +45,7 @@ public void setSessionFactory(SessionFactory sessionFactory) {
 			session.update(user);
 			session.flush();
 		}
-	  /*  
+	   
 	    
 	    @Transactional
 	   	public void delete(Userchat user) {
@@ -75,6 +75,4 @@ public void setSessionFactory(SessionFactory sessionFactory) {
 	   		
 	   		
 	   	}
-	   
-	*/
 }

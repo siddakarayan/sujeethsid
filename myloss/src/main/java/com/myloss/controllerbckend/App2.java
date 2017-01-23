@@ -27,7 +27,7 @@ public class App2 {
          add.setAddress("hki");
          add.setState("uuuzz");
          add.setCity("jkkkj");
-         add.setMobile("57587");
+         add.setMobile("987654");
          
        //  cd.save(add);
          cd.update(add);

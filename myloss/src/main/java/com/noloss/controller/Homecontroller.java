@@ -1,5 +1,9 @@
 package com.noloss.controller;
 
+
+import java.util.ArrayList;
+import java.util.List;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +65,27 @@ public class Homecontroller {
        
    	System.out.println(name +"  "+"name,email,password,address,state,city,mobile");
 		return new ResponseEntity<Userchat>(HttpStatus.OK);
+	}
+	
+		@RequestMapping(value="/Login/{email}/{password}",method=RequestMethod.POST,headers="Accept=application/json")
 
+		public ResponseEntity<Userchat> Login(@PathVariable String email,@PathVariable String password){
+		System.out.println("controller");
+		List<Userchat> Userchat=new ArrayList<Userchat>();
+		Userchat = userdao.getUser(email, password);
+		if(Userchat.isEmpty())
+		{
+		System.out.println("invalid details");
+		return new ResponseEntity<Userchat>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+		else
+		{
+		System.out.println("valid details");
+	    return new ResponseEntity<Userchat>(HttpStatus.OK);
+	
+		}
+	
+		
 	}
 }
 	
