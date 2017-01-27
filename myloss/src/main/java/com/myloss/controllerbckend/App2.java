@@ -22,16 +22,16 @@ public class App2 {
        Userchat add = new Userchat();
       
         add.setName("siddak");
-        add.setPassword("1234567");
-         add.setEmail("rrrjj");
+        add.setPassword("123");
+         add.setEmail("raj");
          add.setAddress("hki");
          add.setState("uuuzz");
          add.setCity("jkkkj");
          add.setMobile("987654");
          
-       //  cd.save(add);
+        cd.save(add);
          cd.update(add);
-        // cd.delete(add);
+         cd.delete(add);
          System.out.println("woo");
     
     }

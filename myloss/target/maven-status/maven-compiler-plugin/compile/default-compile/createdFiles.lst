@@ -1,5 +1,4 @@
 com\myloss\controllerbckend\App2.class
-com\controller\Homecontroller.class
 com\model2\Userchat.class
 com\dao\Userdao.class
 com\niit\mylossconfig\MylossContextConfig.class
