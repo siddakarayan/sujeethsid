@@ -2,68 +2,55 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SIGN IN</title>
+<title>Sign in</title>
          
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="./views/App.js"></script>
- </head>
-
-<body>
-<div ng-controller="ctrl">
-<style>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+   <script type="text/javascript" src="views/App.js"></script>
+   <link rel="stylesheet" href="resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+   <script  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+    </head>
+   <style>
  body {
-   background-color:lightblue;
+    background-image: url("resources/images/cool1.jpg");
     background-repeat;
 }
 </style>
-
+ 
+<div ng-controller="ctrl">
       
-      <div class="container">
-        <h2 >Please Register</h2>
-       
-        <label for="inputname" class="sr-only">Name</label>
-        <input type="text" ng-model="name" name="name" id="inputname" class="form-control" placeholder="" required autofocus>
-	</div>
-	
-	<div>
-        <label for="inputEmail" class="sr-only">Email Address</label>
-        <input type="text" ng-model="email" id="inputEmail" class="form-control" placeholder="" required autofocus>
-      </div> 
-      
-       <div>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" ng-model="password" id="inputPassword" class="form-control" placeholder="" required>
-        </div>
+        <h1>Sign Up</h1>
         
-        <div>
-         <label for="inputAddress" class="sr-only">Address</label>
-        <input type="text" ng-model=address id="inputAddress" class="form-control" placeholder="" required>
-        </div>
+            <label for="name">Name:</label>
+          <input type="text" id="name" ng-model="name" name="name" required="">
+          
+          <label for="email">Email:</label>
+          <input type="text" ng-model="emailaddress" name="emailaddress" required="">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" ng-model="password"  required="">
+          
+           <label for="address">Address:</label>
+          <input type="text" id="address" ng-model="address"  required="">
+         
+          <label for="state">State:</label>
+          <input type="text" id="state" ng-model="state"  required="">
+         
+          <label for="city">City:</label>
+          <input type="text" id="city" ng-model="city"  required="">
+         
+           <label for="mobile no">Mobile No:</label>
+          <input type="text" id="mobile no" ng-model="mobile no" required="">
         
-        <div>
-        <label for="inputState" class="sr-only">State</label>
-        <input type="text"  ng-model=state id="inputState" class="form-control" placeholder="" required>
-        </div>
         
-         <div>
-        <label for="inputCity" class="sr-only">City</label>
-        <input type="text"  ng-model=city id="inputCity" class="form-control" placeholder="" required>
-        </div>
         
-         <div>
-        <label for="inputMobile No" class="sr-only">Mobile No</label>
-        <input type="text"  ng-model=mobile no id="inputMobile No" class="form-control" placeholder="" required>
-        </div>
-        
-        <button type="submit" ng-click="Sign()" class="btn btn-primary">Submit</button>
-        
-      </form>
-</div>
-
-
-</body>
+        <button type="submit" ng-click ="Sign()">Sign Up</button>
+        <button type="submit" ng-click ="Sign()">Reset</button>
+      </div>
+ 
+    </body>
 </html>

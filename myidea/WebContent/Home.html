@@ -8,24 +8,18 @@
     <title>BLA BLA</title>
 
     <!-- Bootstrap -->
-    
-   
-<!--     <link href="<c:url value='/resources/css/bootstrap.min.css'/>" rel="stylesheet"> -->
-<!-- 	<link rel="stylesheet" href="<c:url value='/resources/css/font-awesome.min.css'/>"/> -->
-<!-- 	<link rel="stylesheet" href="<c:url value='/resourcescss/animate.css'/>"> -->
-<!-- 	<link rel="stylesheet" href="<c:url value='/resourcescss/overwrite.css'/>"> -->
-<!-- 	<link href="<c:url value='/resources/css/animate.min.css'/>" rel="stylesheet">  -->
-<!-- 	<link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet" />	 -->`
-
-<!--     <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/jquery.min.js'/>" ></script> -->
-<!--   <script src="<c:url value='/resources/bootstrap-3.3.6-dist/js/bootstrap.min.js'/>" ></script> -->
-    
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+   <script type="text/javascript" src="views/App.js"></script>
+   <link rel="stylesheet" href="resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+   <script  src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
   </head>
  	  <body ng-app="Sign" class="ng-cloak">
       <div ng-controller="ctrl">
       <style>
  body {
-   background-color:red;
+    background-image: url("resources/images/p1.jpg");
     background-repeat;
 }
 </style>
@@ -45,11 +39,12 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#/Home">Home</a></li>
-                        <li><a href="Home">ShutUp</a></li>
-                        <li><a href="Blog">Blog</a></li>
+                        
+                        <li><a href="Blog">Blog</a></li>                     
                         <li><a href="Forum">Forum</a></li>
+                        <li><a href="#/Sign">SignUp</a></li> 
                         <li><a href="#/Login">Login</a></li> 
-                         <li><a href="#/Sign">SignUp</a></li>  
+                          
                
                     </ul>
                 </div>
@@ -60,7 +55,5 @@
 	 <div ng-view></div>
   </body>
   
-	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-   <script type="text/javascript" src="views/App.js"></script>
+	
 </html>

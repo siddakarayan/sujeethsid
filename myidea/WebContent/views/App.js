@@ -56,18 +56,4 @@ var url="http://"+$window.location.host+"/myloss";
 		  $routeProvider.when("/Sign",{templateUrl:"Sign.html"})
 		  $routeProvider.when("/Home",{templateUrl: "Home.html"});
 	});
-
-		
-	    
-	
-	
-	
-		
-
-	
-
-
-	
-	
-	
 		
